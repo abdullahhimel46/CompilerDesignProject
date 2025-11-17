@@ -1,8 +1,8 @@
 # CompilerDesignProject
 ## Meet Our Team:
 -------------------------
-Md Labib Ahmed Leo (1147)
-Md Abdullah Himel (1622)
+Md Labib Ahmed Leo (1147) \n
+Md Abdullah Himel (1622) <br>
 Zabir Bin Abu Bakar (4752)
 Poritos Das (1736)
 Mysha Milon Ohana (1039)
