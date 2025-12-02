@@ -53,6 +53,7 @@ Install the following:
 flex -o lex.yy.c src/sia.l
 bison -d -o src/sia.tab.c src/sia.y
 gcc -Iinclude src/*.c lex.yy.c src/sia.tab.c -o sia_compiler -lm
+```
 
 ### Run a Program
 ```bash
