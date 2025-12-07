@@ -47,15 +47,21 @@ Install the following:
 - `flex`
 - `bison`
 - `gcc` or `clang`
+- `Python 3.x`
 
 ### Build the Compiler
 ```bash
-flex -o lex.yy.c src/sia.l
-bison -d -o src/sia.tab.c src/sia.y
-gcc -Iinclude src/*.c lex.yy.c src/sia.tab.c -o sia_compiler -lm
+# Compile the Sia code to C
+python sia_compiler.py studentMarksCalc.sia
+
+# Compile C to executable
+gcc -o studentMarksCalc.exe studentMarksCalc.c
+
+# Run the program
+.\studentMarksCalc.exe
 ```
 
-### Run a Program
+### Or, use the batch file (one command)
 ```bash
-./sia_compiler program.sia
+.\run_sia.bat studentMarksCalc.sia
 
