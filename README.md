@@ -18,7 +18,7 @@
 ---
 
 # 📘 Overview
-Sia -> Simple, Interpretable, Analyzer
+Sia -> Simple, Interpretable, Analyzer  <br>
 **Sia** (Syntax Interpreter & Analyzer) is a small, Python-inspired educational programming language created to illustrate every fundamental stage of compiler construction using:
 
 - **Flex** — lexical analysis  
@@ -51,6 +51,8 @@ Install the following:
 - `Python 3.x`
 
 ### Ways to run a SIA program
+
+--- Python approach ---
 ```bash
 # Compile the Sia code to C
 python sia_compiler.py studentMarksCalc.sia
@@ -65,4 +67,12 @@ gcc -o studentMarksCalc.exe studentMarksCalc.c
 ### Or, use the batch file (one command)
 ```bash
 .\run_sia.bat studentMarksCalc.sia
+
+
+
+--- C approach ---
+```bash
+flex -o lex.yy.c src/lexer.l
+bison -d -o src/parser.tab.c src/parser.y
+gcc -Iinclude src/*.c lex.yy.c src/parser.tab.c -o sia_compiler
 
