@@ -67,7 +67,7 @@ gcc -o studentMarksCalc.exe studentMarksCalc.c
 ### Or, use the batch file (one command)
 ```bash
 .\run_sia.bat studentMarksCalc.sia
-
+```
 
 
 --- C approach ---
