@@ -75,4 +75,4 @@ gcc -o studentMarksCalc.exe studentMarksCalc.c
 flex -o lex.yy.c src/lexer.l
 bison -d -o src/parser.tab.c src/parser.y
 gcc -Iinclude src/*.c lex.yy.c src/parser.tab.c -o sia_compiler
-
+```
