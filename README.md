@@ -18,6 +18,7 @@
 ---
 
 # 📘 Overview
+Sia -> Simple, Interpretable, Analyzer
 **Sia** (Syntax Interpreter & Analyzer) is a small, Python-inspired educational programming language created to illustrate every fundamental stage of compiler construction using:
 
 - **Flex** — lexical analysis  
