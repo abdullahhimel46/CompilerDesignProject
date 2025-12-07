@@ -49,7 +49,7 @@ Install the following:
 - `gcc` or `clang`
 - `Python 3.x`
 
-### Build the Compiler
+### Ways to run a SIA program
 ```bash
 # Compile the Sia code to C
 python sia_compiler.py studentMarksCalc.sia
