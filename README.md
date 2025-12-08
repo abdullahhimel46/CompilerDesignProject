@@ -51,7 +51,7 @@ Install the following:
 - `Python 3.x`
 
 ### How to run a SIA program
---- C approach ---
+--- For windows ---
 ```bash
 .\sia_compiler.exe studentMarksCalc.sia
 gcc studentMarksCalc.c -o studentMarksCalc.exe
@@ -61,4 +61,23 @@ gcc studentMarksCalc.c -o studentMarksCalc.exe
 ### Or, use the batch file (one command)
 ```bash
 .\run_sia.bat studentMarksCalc.sia
+```
+
+
+--- For Linux/Mac ---
+```bash
+# Build the Compiler
+make
+
+# Make Run script executable
+chmod +x run_sia.sh
+
+# Run the program
+./run_sia.sh studentMarksCalc.sia
+```
+
+# Using makefile 
+```bash
+make run
+FILE=studentMarksCalc.sia
 ```
