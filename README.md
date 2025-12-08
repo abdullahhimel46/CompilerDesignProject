@@ -55,10 +55,10 @@ Install the following:
 ```bash
 flex -o lex.yy.c src/lexer.l
 bison -d -o src/parser.tab.c src/parser.y
+gcc -Iinclude src/*.c lex.yy.c src/parser.tab.c -o sia_compiler
 ```
+
 ### Or, use the batch file (one command)
 ```bash
 .\run_sia.bat studentMarksCalc.sia
-```
-gcc -Iinclude src/*.c lex.yy.c src/parser.tab.c -o sia_compiler
 ```
