@@ -53,9 +53,9 @@ Install the following:
 ### How to run a SIA program
 --- C approach ---
 ```bash
-flex -o lex.yy.c src/lexer.l
-bison -d -o src/parser.tab.c src/parser.y
-gcc -Iinclude src/*.c lex.yy.c src/parser.tab.c -o sia_compiler
+.\sia_compiler.exe studentMarksCalc.sia
+gcc studentMarksCalc.c -o studentMarksCalc.exe
+.\studentMarksCalc.exe
 ```
 
 ### Or, use the batch file (one command)
