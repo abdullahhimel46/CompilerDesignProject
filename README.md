@@ -48,7 +48,6 @@ Install the following:
 - `flex`
 - `bison`
 - `gcc` or `clang`
-- `Python 3.x`
 
 ### How to run a SIA program
 --- For windows ---
@@ -76,7 +75,7 @@ chmod +x run_sia.sh
 ./run_sia.sh studentMarksCalc.sia
 ```
 
-# Using makefile 
+### Using makefile 
 ```bash
 make run
 FILE=studentMarksCalc.sia
