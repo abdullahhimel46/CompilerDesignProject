@@ -50,29 +50,15 @@ Install the following:
 - `gcc` or `clang`
 - `Python 3.x`
 
-### Ways to run a SIA program
-
---- Python approach ---
-```bash
-# Compile the Sia code to C
-python sia_compiler.py studentMarksCalc.sia
-
-# Compile C to executable
-gcc -o studentMarksCalc.exe studentMarksCalc.c
-
-# Run the program
-.\studentMarksCalc.exe
-```
-
-### Or, use the batch file (one command)
-```bash
-.\run_sia.bat studentMarksCalc.sia
-```
-
-
+### How to run a SIA program
 --- C approach ---
 ```bash
 flex -o lex.yy.c src/lexer.l
 bison -d -o src/parser.tab.c src/parser.y
+```
+### Or, use the batch file (one command)
+```bash
+.\run_sia.bat studentMarksCalc.sia
+```
 gcc -Iinclude src/*.c lex.yy.c src/parser.tab.c -o sia_compiler
 ```
